@@ -43,7 +43,7 @@ const handleLoginSubmit = async (e: React.FormEvent) => {
       return;
     }
     const response = await axios.post(
-      'http://localhost:8000/users/login',
+      'https://portfoliov2backeng-production.up.railway.app/users/login',
       loginData,
       { withCredentials: true }
     );
@@ -75,7 +75,7 @@ const handleRegisterSubmit = async (e: React.FormEvent) => {
     }
     localStorage.setItem("activeNavItem", '/')
     const response = await axios.post(
-      'http://localhost:8000/users/register',
+      'https://portfoliov2backeng-production.up.railway.app/users/register',
       registerData,
       { withCredentials: true }
     );

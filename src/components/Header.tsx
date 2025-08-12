@@ -19,7 +19,7 @@ function Header() {
   };
 
   const handleLogout = async() =>{
-    await axios.get("http://localhost:8000/users/logout",{withCredentials:true})
+    await axios.get("https://portfoliov2backeng-production.up.railway.app/users/logout",{withCredentials:true})
     navigate("/")
     logout()
   }

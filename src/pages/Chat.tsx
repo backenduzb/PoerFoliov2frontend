@@ -32,7 +32,7 @@ export default function Chat() {
   useEffect(() => {
   const fetchOnlineUsers = () => {
     axios
-      .get("http://localhost:8000/user/online", { withCredentials: true })
+      .get("https://portfoliov2backeng-production.up.railway.app/user/online", { withCredentials: true })
       .then(res => {
         setOnlines(res.data);
       })
@@ -73,7 +73,7 @@ export default function Chat() {
       setWs(newWs);
 
       axios
-        .get("http://localhost:8000/chat/global/messages", { withCredentials: true })
+        .get("https://portfoliov2backeng-production.up.railway.app/chat/global/messages", { withCredentials: true })
         .then(res => {
           setMessages(res.data);
         })
