@@ -33,13 +33,7 @@ const skillCategories = [
 ];
 
 const Skills = () => {
-  const [show, setShow] = useState(false);
   const [progress, setProgress] = useState<{ [key: string]: number }>({});
-
-  useEffect(() => {
-    const timer = setTimeout(() => setShow(true), 100);
-    return () => clearTimeout(timer);
-  }, []);
 
   useEffect(() => {
     const intervals: NodeJS.Timeout[] = [];
