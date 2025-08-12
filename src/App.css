@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{ 
+  --border-color: #b2f5ea;
+  --card-bg: #161616;
+  --green-border: #00ae90;
+  font-family:"Rajdhani";
+  --green-text: #00ffd5;  
+}
+
+body{
+  background-color: #101010;
+}
