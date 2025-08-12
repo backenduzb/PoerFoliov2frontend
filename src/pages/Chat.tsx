@@ -65,7 +65,7 @@ export default function Chat() {
 
 
   useEffect(() => {
-    const socketUrl = `ws://portfoliov2backeng-production.up.railway.app/chat/ws/global`;
+    const socketUrl = `wss://portfoliov2backeng-production.up.railway.app/chat/ws/global`;
     const newWs = new WebSocket(socketUrl);
 
     newWs.onopen = () => {
