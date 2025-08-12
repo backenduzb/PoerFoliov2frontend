@@ -31,7 +31,7 @@ export const Auths = ({ children }: { children: React.ReactNode }) => {
 
   const fetchUser = async () => {
     try {
-      const res = await axios.get("http://localhost:8000/users/me", {
+      const res = await axios.get("https://portfoliov2backeng-production.up.railway.app/users/me", {
         withCredentials: true,
       });
       setUser(res.data);
